@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371948050582",
+    "project_id": "bayti-app-121bd",
+    "storage_bucket": "bayti-app-121bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371948050582:android:1357471a91d25acdc80ab7",
+        "android_client_info": {
+          "package_name": "com.example.bati_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPaQKsEX-3ABXwCJK1O3joPOx9i9EhJC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

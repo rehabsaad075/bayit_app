@@ -3,6 +3,8 @@
   "password": "password",
   "login": "Login",
   "signUp": "Sign up",
+  "loginShowToast": "Login Successfully",
+  "signUpShowToast": "register successfully ",
   "welcomeMessage": "Welcome back you\\'ve been missed!",
   "loginMessage": "please Login to continue using our app",
   "emailValidate": "The email field is required",

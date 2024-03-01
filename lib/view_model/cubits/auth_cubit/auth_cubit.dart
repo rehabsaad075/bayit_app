@@ -1,3 +1,4 @@
+import 'package:bati_app/i10l/locale_keys.g.dart';
 import 'package:bati_app/models/users_model.dart';
 import 'package:bati_app/view_model/data/firebase/firebaseKeys.dart';
 import 'package:bati_app/view_model/data/local_data/shared_keys.dart';
@@ -6,6 +7,7 @@ import 'package:bati_app/view_model/utils/colors/app_colors.dart';
 import 'package:bati_app/view_model/utils/functions/flutterToastFunctions.dart';
 import 'package:bati_app/view_model/utils/icons/app_icons.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -58,7 +60,7 @@ class AuthCubit extends Cubit<AuthStates> {
        password: passwordController.text
    ).then((value) async {
      await addUserToFireStore(value);
-     showToast(msg: 'register successfully');
+     showToast(msg: LocaleKeys.signUpShowToast.tr());
      emit(RegisterSuccessState());
    })
    .catchError((error){
@@ -75,7 +77,7 @@ class AuthCubit extends Cubit<AuthStates> {
        password: passwordController.text
    ).then((value) {
      LocalData.set(key:SharedKeys.uid,value:value.user?.uid);
-     showToast(msg: 'Login Successfully');
+     showToast(msg: LocaleKeys.loginShowToast.tr());
      emit(LoginSuccessState());
    })
    .catchError((error){

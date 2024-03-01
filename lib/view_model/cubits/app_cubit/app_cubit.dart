@@ -20,6 +20,7 @@ import 'package:bati_app/view_model/data/local_data/shared_keys.dart';
 import 'package:bati_app/view_model/data/local_data/shared_preferences.dart';
 import 'package:bati_app/view_model/utils/functions/flutterToastFunctions.dart';
 import 'package:bati_app/view_model/utils/functions/navigation_functions.dart';
+import 'package:bati_app/view_model/utils/images/app_images.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -71,49 +72,49 @@ void changeIndexButtonNavigationBar(int value){
 
   List<BoardingModel>boarding=[
     BoardingModel(
-        image: 'assets/images/services_images/electricity image.jpg',
+        image: AppImages.electricityImage,
         tittle: LocaleKeys.electricityTittle.tr(),
         subTittle: LocaleKeys.electricitySubTittle.tr(),
         body: LocaleKeys.electricityBody.tr()
     ),
     BoardingModel(
-        image: 'assets/images/services_images/plumbing image.jpg',
+        image: AppImages.plumbingImage,
         tittle: LocaleKeys.plumbingTittle.tr(),
         subTittle: LocaleKeys.plumbingSubTittle.tr(),
         body: LocaleKeys.plumbingBody.tr()
     ),
     BoardingModel(
-        image: 'assets/images/services_images/Carpentry image.jpg',
+        image: AppImages.carpentryImage,
         tittle: LocaleKeys.carpentryTittle.tr(),
         subTittle: LocaleKeys.carpentrySubTittle.tr(),
         body: LocaleKeys.carpentryBody.tr()
     ),
     BoardingModel(
-        image: 'assets/images/services_images/House paint image.jpg',
+        image: AppImages.housePaintImage,
         tittle: LocaleKeys.housePaintTittle.tr(),
         subTittle: LocaleKeys.housePaintSubTittle.tr(),
         body: LocaleKeys.housePaintBody.tr()
     ),
     BoardingModel(
-        image: 'assets/images/services_images/Air conditioning image.jpg',
+        image: AppImages.airConditioningImage,
         tittle: LocaleKeys.airConditioningTittle.tr(),
         subTittle: LocaleKeys.airConditioningSubTittle.tr(),
         body: LocaleKeys.airConditioningBody.tr()
     ),
     BoardingModel(
-        image: 'assets/images/services_images/Maintenance of electrical appliances.jpg',
+        image: AppImages.electricalAppliancesImage,
         tittle: LocaleKeys.electricalAppliancesTittle.tr(),
         subTittle: LocaleKeys.electricalAppliancesSubTittle.tr(),
         body: LocaleKeys.electricalAppliancesBody.tr()
     ),
     BoardingModel(
-        image: 'assets/images/services_images/pest control image.png',
+        image:AppImages.pestControlImage,
         tittle: LocaleKeys.pestControlTittle.tr(),
         subTittle: LocaleKeys.pestControlSubTittle.tr(),
         body: LocaleKeys.pestControlBody.tr()
     ),
     BoardingModel(
-        image: 'assets/images/services_images/House cleaning.jpg',
+        image: AppImages.houseCleaningImage,
         tittle: LocaleKeys.houseCleaningTittle.tr(),
         subTittle: LocaleKeys.houseCleaningSubTittle.tr(),
         body: LocaleKeys.houseCleaningBody.tr()
@@ -122,43 +123,43 @@ void changeIndexButtonNavigationBar(int value){
 
   List<ServicesLogoModel>servicesLogoList=[
     ServicesLogoModel(
-        logo: 'assets/images/logos_images/electricity logo.png',
+        logo: AppImages.electricityLogo,
         serviceName: LocaleKeys.electricityTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/Plumbing logo.jpg',
+      logo: AppImages.plumbingLogo,
       serviceName: LocaleKeys.plumbingTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/Carpentry logo.jpg',
+      logo: AppImages.carpentryLogo,
       serviceName: LocaleKeys.carpentryTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/House paint logo.jpg',
+      logo: AppImages.housePaintLogo,
       serviceName: LocaleKeys.paintingTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/Air conditioning logo.jpg',
+      logo: AppImages.airConditioningLogo,
       serviceName: LocaleKeys.airConditioningTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/Maintenance of electrical appliances logo.png',
+      logo: AppImages.electricalAppliancesLogo,
       serviceName: LocaleKeys.electricalAppliancesTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/pest control logo.jpg',
+      logo: AppImages.pestControlLogo,
       serviceName: LocaleKeys.pestControlTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/House cleaning logo.jpg',
+      logo: AppImages.houseCleaningLogo,
       serviceName: LocaleKeys.houseCleaningTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/tv logo.jpg',
+      logo: AppImages.tvLogo,
       serviceName: LocaleKeys.tVAndReceiverTittle.tr(),
     ),
     ServicesLogoModel(
-      logo: 'assets/images/logos_images/Surveillance camera logo.jpg',
+      logo: AppImages.surveillanceCameraLogo,
       serviceName: LocaleKeys.surveillanceCameraTittle.tr(),
     ),
   ];
@@ -382,7 +383,6 @@ void changeIndexButtonNavigationBar(int value){
 
   Future<void>addDoneServices()async {
     emit(AddDoneServiceLoadingState());
-
     await FirebaseFirestore.instance.collection(FirebaseKeys.doneServices)
         .add(
         {

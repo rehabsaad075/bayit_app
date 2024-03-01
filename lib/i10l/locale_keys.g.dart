@@ -5,6 +5,8 @@ abstract class  LocaleKeys {
   static const password = 'password';
   static const login = 'login';
   static const signUp = 'signUp';
+  static const loginShowToast = 'loginShowToast';
+  static const signUpShowToast = 'signUpShowToast';
   static const welcomeMessage = 'welcomeMessage';
   static const loginMessage = 'loginMessage';
   static const emailValidate = 'emailValidate';

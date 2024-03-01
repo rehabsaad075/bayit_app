@@ -3,6 +3,7 @@ import 'package:bati_app/view/screens/home_page_screen/home_page_screen.dart';
 import 'package:bati_app/view_model/utils/colors/app_colors.dart';
 import 'package:bati_app/view_model/cubits/auth_cubit/auth_cubit.dart';
 import 'package:bati_app/view_model/utils/functions/navigation_functions.dart';
+import 'package:bati_app/view_model/utils/images/app_images.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -31,10 +32,10 @@ class LoginScreen extends StatelessWidget {
                 key: authCubit.formKeyLoginAuth,
                 child: Column(
                   children: [
-                    const CircleAvatar(
+                     CircleAvatar(
                       radius: 70,
                       backgroundImage: AssetImage(
-                          'assets/images/login_image.png',
+                        AppImages.loginImage,
                       ),
                     ),
                     const SizedBox(height: 30,),

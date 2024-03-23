@@ -1,4 +1,7 @@
 import 'package:bati_app/i10l/locale_keys.g.dart';
+import 'package:bati_app/view/componetes/custom_widgets/elevatetButton_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/textFormField_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/text_custom.dart';
 import 'package:bati_app/view/screens/home_page_screen/home_page_screen.dart';
 import 'package:bati_app/view_model/utils/colors/app_colors.dart';
 import 'package:bati_app/view_model/cubits/auth_cubit/auth_cubit.dart';
@@ -7,9 +10,6 @@ import 'package:bati_app/view_model/utils/images/app_images.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../componetes/custom_widdgets/elevatetButton_custom.dart';
-import '../../componetes/custom_widdgets/textFormField_custom.dart';
-import '../../componetes/custom_widdgets/text_custom.dart';
 import 'register_screen.dart';
 
 class LoginScreen extends StatelessWidget {

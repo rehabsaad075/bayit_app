@@ -1,5 +1,5 @@
 import 'package:bati_app/i10l/locale_keys.g.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/text_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/text_custom.dart';
 import 'package:bati_app/view/screens/request_screen/notes_screen.dart';
 import 'package:bati_app/view_model/cubits/app_cubit/app_cubit.dart';
 import 'package:bati_app/view_model/utils/functions/navigation_functions.dart';
@@ -30,7 +30,7 @@ class NextButtonCustom extends StatelessWidget {
                   screen: const NotesAndAddressScreen()
               );
             },
-            child:  TextCustom(
+            child: TextCustom(
               textValue: LocaleKeys.nextButton.tr(),
               fontSize: 20,
             ),

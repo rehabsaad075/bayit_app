@@ -1,14 +1,14 @@
 import 'package:bati_app/i10l/locale_keys.g.dart';
 import 'package:bati_app/models/users_model.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/elevatetButton_custom.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/text_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/elevatetButton_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/listTile_item.dart';
+import 'package:bati_app/view/componetes/custom_widgets/text_custom.dart';
 import 'package:bati_app/view/screens/auth_screens/login_screen.dart';
 import 'package:bati_app/view/screens/auth_screens/register_screen.dart';
 import 'package:bati_app/view/screens/settings_screens/account_settings_screen/account_settings_screen.dart';
 import 'package:bati_app/view/screens/settings_screens/change_address_screen/change_address_screen.dart';
 import 'package:bati_app/view/screens/settings_screens/choose_lang_screen/choose_lang_screen.dart';
 import 'package:bati_app/view/screens/settings_screens/help_screen/help_center_screen.dart';
-import 'package:bati_app/view_model/cubits/app_cubit/app_cubit.dart';
 import 'package:bati_app/view_model/cubits/app_cubit/app_cubit.dart';
 import 'package:bati_app/view_model/data/local_data/shared_preferences.dart';
 import 'package:bati_app/view_model/utils/functions/alertDialog_function.dart';
@@ -19,8 +19,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../../componetes/custom_widdgets/listTile_item.dart';
 
 class SettingsScreen extends StatelessWidget {
   final UsersModel ?usersModel;

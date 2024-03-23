@@ -1,7 +1,7 @@
 import 'package:bati_app/i10l/locale_keys.g.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/elevatetButton_custom.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/textFormField_custom.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/text_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/elevatetButton_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/textFormField_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/text_custom.dart';
 import 'package:bati_app/view/screens/auth_screens/login_screen.dart';
 import 'package:bati_app/view/screens/settings_screens/account_settings_screen/change_password_screen.dart';
 import 'package:bati_app/view_model/cubits/auth_cubit/auth_cubit.dart';

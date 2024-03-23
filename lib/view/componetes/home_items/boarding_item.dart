@@ -1,5 +1,5 @@
 import 'package:bati_app/models/boarding_model.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/text_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/text_custom.dart';
 import 'package:bati_app/view_model/utils/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 

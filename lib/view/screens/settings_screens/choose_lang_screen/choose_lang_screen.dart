@@ -1,7 +1,7 @@
 import 'package:bati_app/i10l/locale_keys.g.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/elevatetButton_custom.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/radioListTile_custom.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/text_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/elevatetButton_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/radioListTile_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/text_custom.dart';
 import 'package:bati_app/view/screens/splash_screen/splash_screen.dart';
 import 'package:bati_app/view_model/cubits/app_cubit/app_cubit.dart';
 import 'package:bati_app/view_model/utils/colors/app_colors.dart';

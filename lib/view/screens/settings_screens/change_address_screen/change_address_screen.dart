@@ -1,7 +1,7 @@
 import 'package:bati_app/i10l/locale_keys.g.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/elevatetButton_custom.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/searchBar_item.dart';
-import 'package:bati_app/view/componetes/custom_widdgets/text_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/elevatetButton_custom.dart';
+import 'package:bati_app/view/componetes/custom_widgets/searchBar_item.dart';
+import 'package:bati_app/view/componetes/custom_widgets/text_custom.dart';
 import 'package:bati_app/view_model/utils/colors/app_colors.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
